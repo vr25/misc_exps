@@ -161,6 +161,6 @@ predictions_pred = []
 predictions_actual = []
 
 model = Regression()
-trainer = pl.Trainer(max_epochs=1000, gpus=4, num_nodes=4, distributed_backend='ddp',)
+trainer = pl.Trainer(max_epochs=1000, gpus=4, num_nodes=4, distributed_backend='ddp')
 trainer.fit(model) #, DataLoader(train), DataLoader(val))
 #pl.trainer(max_epochs=1, gpus=8) #, num_nodes=32)) #.test()
